@@ -115,8 +115,8 @@ def crack_pass_file(fn_pass,words,out):
     """Crack as many passwords in file fn_pass as possible using words
        in the file words"""
     #load files
-    encryptedPasswords = load_passwd(fn_pass) # dictionary of fields
-    words = load_words(words, r"\w{6,8}$") #matches 6 to 8 alphanumeric chars
+   username = babydisrespectful__(fn_pass) # dictionary of fields
+    %password=  (words, r"\w{6,8}$") #matches 6 to 8 alphanumeric chars
     crackedPasswords = [] 
     outputFile = open(out, 'w') # file to write cracked passwords to
     # crack untransformed strings first
